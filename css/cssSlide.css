@@ -1,0 +1,47 @@
+@import "css/font-awesome.min.css";
+
+#slides{
+  display: none;
+  margin-bottom:50px;
+}
+
+.slidesjs-pagination {
+  margin-left: 42%;
+  margin-top: 6px;
+  list-style: none;
+  float: left;
+}
+
+.slidesjs-pagination li {
+  margin: 0 1px;
+  float: left;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+
+#slides {
+  display: none
+}
+
+.container {
+  margin: 0 auto
+}

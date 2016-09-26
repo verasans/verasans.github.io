@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Sans</title>
+	<title>Sans_TheBoyAndTheFish</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/cssSlide.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans" rel="stylesheet">
-<script type="text/javascript" src="js/modernizr-2.7.1.js"></script>
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-<link rel="apple-touch-icon" href="img/webclip.png">
+	<script type="text/javascript" src="js/modernizr-2.7.1.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/webclip.png">
 </head>
 
 <body>
@@ -17,8 +18,8 @@
 				<h1 class="brand-text">Sans.</h1>
 			</a>
 			<nav class="w-nav-menu navigation-menu" role="navigation">
-				<a class="w-nav-link navigation-link w--current" href="index.html">Work</a>
-				<a class="w-nav-link navigation-link" href="about.html">About</a>
+				<a style="color:#00bfa5;font-weight:bold;" class="w-nav-link navigation-link" href="index.html">Work</a>
+				<a style="color:silver" class="w-nav-link navigation-link" href="about.html">About</a>
 		</nav>
 			<div class="w-nav-button hamburger-button">
 				<div class="w-icon-nav-menu"></div>
@@ -27,7 +28,24 @@
 	</div>
 	<div class="w-section section">
 		<div class="w-container">
-			<div class="w-dyn-list">
+			<div class="container">
+    <div id="slides">
+      <img src="img/boyfishAshes.png" alt="ashes">
+      <img src="img/boyfishFamily.png" alt="family">
+      <img src="img/boyfishNecklace.png" alt="necklace">
+    </div>
+  </div>
+			<div class="photo-info-wrapper">
+				<h1 class="photo-page-title">O RAPAZ E O PEIXE</br>(The Boy and the Fish)</h1>
+				<div class="w-richtext photo-text">
+					<p>Set of illustrations to support the making of the film: 'The boy and the fish'. This was the final project of the course of cinema, by the filmmaker Lu&iacute;s Montanha.</p>
+					<p><a href="http://orapazeopeixe.wordpress.com/" target="_blank" class="action-button">LAUNCH PROJECT</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="w-container all-images">
+			<h1 class="photo-page-title">All Works</h1>
+			<div class="w-dyn-list gallery-wrapper">
 				<div class="w-dyn-items w-row">
 					<div class="w-dyn-item w-col w-col-4">
 						<a class="w-inline-block photo-link-block" href="boyfish.html">
@@ -77,7 +95,16 @@
 		<div class="footer-text">&copy; Vera Sans — 2016<br/>All rights reserved</div>
 	</div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/webflow.6a91f4eb8.js"></script>
-
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+ </script>
 </body>
 </html>
