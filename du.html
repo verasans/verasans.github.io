@@ -17,7 +17,7 @@
 				<h1 class="brand-text">Sans.</h1>
 			</a>
 			<nav class="w-nav-menu navigation-menu" role="navigation">
-				<a class="w-nav-link navigation-link w--current" href="index.html">Work</a>
+				<a style="color:#00bfa5;font-weight:bold;" class="w-nav-link navigation-link w--current" href="index.html">Work</a>
 				<a class="w-nav-link navigation-link" href="about.html">About</a>
 		</nav>
 			<div class="w-nav-button hamburger-button">
@@ -27,14 +27,18 @@
 	</div>
 	<div class="w-section section">
 		<div class="w-container">
-			<div class="w-dyn-list">
+			<img src="img/du01.jpg">
+			<h1 class="photo-page-title">du Sales Portal</br>Visual improvements to the existing portal</h1>
+				<div class="w-richtext photo-text">
+					<p>du Sales Portal is a portal for direct and indirect channels, that is dedicated to activate mobile numbers, manage offers and customer documentation.<br>A platform that simplifies the customer sales processes. By streamlining recurring processes and focusing on relevant information, this portal was design to save time to its users.</p>
+				</div>
+		</div>
+	</div>
+
+		<div class="w-container all-images">
+			<h1 class="photo-page-title">All Works</h1>
+			<div class="w-dyn-list gallery-wrapper">
 				<div class="w-dyn-items w-row">
-					<div class="w-dyn-item w-col w-col-4">
-						<a class="w-inline-block photo-link-block" href="boyfish.html">
-							<img src="img/boyfish_square.jpg">
-							<div class="title">O Rapaz e o Peixe</br>The Boy and the Fish</div>
-						</a>
-					</div>
 					<div class="w-dyn-item w-col w-col-4">
 						<a class="w-inline-block photo-link-block" href="caterpillar.html">
 							<img src="img/caterpillar_square.jpg">
@@ -56,19 +60,13 @@
 					<div class="w-dyn-item w-col w-col-4">
 						<a class="w-inline-block photo-link-block" href="montanha.html">
 							<img src="img/montanha_square.jpg">
-							<div class="title">Luís Montanha Webpage</div>
+							<div class="title">Webpage</div>
 						</a>
 					</div>
 					<div class="w-dyn-item w-col w-col-4">
 						<a class="w-inline-block photo-link-block" href="VDF.html">
 							<img src="img/vodafoneLogo.jpg">
 							<div class="title">Smart Router App</div>
-						</a>
-					</div>
-					<div class="w-dyn-item w-col w-col-4">
-						<a class="w-inline-block photo-link-block" href="du.html">
-							<img src="img/duLogo.jpg">
-							<div class="title">du Sales Portal</div>
 						</a>
 					</div>
 				</div>
@@ -89,7 +87,16 @@
 		<div class="footer-text">&copy; Vera Sans — 2016<br/>All rights reserved</div>
 	</div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/webflow.6a91f4eb8.js"></script>
-
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+ </script>
 </body>
 </html>
