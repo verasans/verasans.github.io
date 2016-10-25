@@ -17,7 +17,7 @@
 				<h1 class="brand-text">Sans.</h1>
 			</a>
 			<nav class="w-nav-menu navigation-menu" role="navigation">
-				<a class="w-nav-link navigation-link w--current" href="index.html">Work</a>
+				<a style="color:#00bfa5;font-weight:bold;" class="w-nav-link navigation-link w--current" href="index.html">Work</a>
 				<a class="w-nav-link navigation-link" href="about.html">About</a>
 		</nav>
 			<div class="w-nav-button hamburger-button">
@@ -27,14 +27,24 @@
 	</div>
 	<div class="w-section section">
 		<div class="w-container">
-			<div class="w-dyn-list">
+			<img src="img/loveyou.jpg" alt="Amsterdam, Netherlands">
+			<h1 class="photo-page-title">Traveling</h1>
+				<div class="photo-info-text"></div>
+				<div class="w-richtext photo-text">
+					<p>Series of illustrations from the countries that I've visited in the past two years.<br>The illustrations
+						have photos that I took to food, textures, architecture, landscaping, and so on.</p>
+			</div>
+			<img src="img/cheese.jpg" alt="Amsterdam, Netherlands" style="padding-top:30px">
+			<img src="img/waffle.jpg" alt="Amsterdam, Netherlands" style="padding-top:10px">
+			<img src="img/dubai.jpg" alt="Dubai, UEA" style="padding-top:10px">
+			<img src="img/pizza.jpg" alt="Milan, Italy" style="padding-top:10px">
+		</div>
+	</div>
+			
+		<div class="w-container all-images">
+			<h1 class="photo-page-title">All Works</h1>
+			<div class="w-dyn-list gallery-wrapper">
 				<div class="w-dyn-items w-row">
-					<div class="w-dyn-item w-col w-col-4">
-						<a class="w-inline-block photo-link-block" href="travel.html">
-							<img src="img/travel.jpg">
-							<div class="title">Traveling</div>
-						</a>
-					</div>
 					<div class="w-dyn-item w-col w-col-4">
 						<a class="w-inline-block photo-link-block" href="crua.html">
 							<img src="img/crua_square.jpg">
@@ -79,17 +89,26 @@
 		<div class="w-container">
 			<div>
 				<a class="w-inline-block social-icon-link" href="https://www.instagram.com/verasans/" target="_blank" alt="instagram">
-					<img width="35" src="img/instagram.svg">
+					<img width="35" src="img/instagram.svg" alt="instagram">
 				</a>
 				<a class="w-inline-block social-icon-link" href="mailto:veraifos@gmail.com" alt="contact me">
-					<img width="30" src="img/contact.svg">
+					<img width="30" src="img/contact.svg" alt="contact me">
 				</a>
 			</div>
 		</div>
 		<div class="footer-text">&copy; Vera Sans — 2016<br/>All rights reserved</div>
 	</div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/webflow.6a91f4eb8.js"></script>
-
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+ </script>
 </body>
 </html>
