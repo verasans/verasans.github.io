@@ -854,8 +854,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     text-align: center;
   }
   .active {
-	color: #fff;
-	font-weight: bold;
+	color: #fff!important;
+	font-weight: bold !important;
 	text-decoration: underline;
 }
   .navigation-link.w--current {
@@ -915,8 +915,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 @media (max-width: 479px) {
   .active {
-	color: #fff;
-	font-weight: bold;
+	color: #fff!important;
+	font-weight: bold !important;
 	text-decoration: underline;
 }
   .photo-block {
