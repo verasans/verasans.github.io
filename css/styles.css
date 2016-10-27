@@ -166,12 +166,12 @@ blockquote {
   color: white;
 }
 .navigation-bar {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: white;
   text-transform: uppercase;
-  position: fixed;
-  width: 100%;
+  /*position: fixed;
+  width: 100%;*/
 }
 .navigation-bar.dark {
   background-color: #5d5d5d;
@@ -874,8 +874,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     z-index: 1000;
     padding-top: 24px;
     padding-bottom: 24px;
-    position: fixed;
-    width: 100%;
+    /*position: fixed;
+    width: 100%;*/
   }
   .hamburger-button {
     padding: 10px;
