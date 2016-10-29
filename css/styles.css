@@ -790,7 +790,19 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   -ms-transform: scale(0.01);
   transform: scale(0.01);
 }
+
+#imgright {
+	margin-left:-5px;
+}
+
 @media (max-width: 991px) {
+	#imgright {
+	margin-left:0px;
+}
+	#imgleft, #imgright {
+	display: block;
+    margin: auto;
+}
 	.navigation-link.w--current {
     color: #fff;
     font-weight: bold;
@@ -851,6 +863,13 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
 }
 @media (max-width: 767px) {
+	#imgright {
+	margin-left:0px;
+}
+	#imgleft, #imgright {
+	display: block;
+    margin: auto;
+}
 	.navigation-link {
     padding: 9px 0px;
     color: #fff;
@@ -919,6 +938,13 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
 }
 @media (max-width: 479px) {
+	#imgright {
+	margin-left:0px;
+}
+	#imgleft, #imgright {
+	display: block;
+    margin: auto;
+}
   .active {
 	color: #fff!important;
 	font-weight: bold !important;
