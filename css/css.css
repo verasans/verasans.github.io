@@ -1422,6 +1422,9 @@ html.w-mod-js *[data-ix="load-up"] {
   .w-dyn-item {
   	margin-bottom: 30px;
   }
+  .nm {
+  	margin-bottom: 0px!important;
+  }
   .hero {
     padding-left: 0px;
     -webkit-box-pack: start;
@@ -1569,6 +1572,9 @@ html.w-mod-js *[data-ix="load-up"] {
   .w-dyn-item {
   	margin-bottom: 30px;
   }
+  .nm {
+  	margin-bottom: 0px!important;
+  }
   .vertical-social {
     position: relative;
     width: 100%;
@@ -1694,9 +1700,12 @@ html.w-mod-js *[data-ix="load-up"] {
   .w-dyn-item {
   	margin-bottom: 20px;
   }
+  .nm {
+  	margin-bottom: 0px!important;
+  }
   .hero {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
   .hero.pages {
     text-align: center;
@@ -1711,7 +1720,7 @@ html.w-mod-js *[data-ix="load-up"] {
     background-color: #fff;
   }
   .main-h1 {
-    font-size: 50px;
+    font-size: 44px;
     line-height: 60px;
     margin-bottom: 10px;
   }
@@ -1785,8 +1794,8 @@ html.w-mod-js *[data-ix="load-up"] {
     padding-left: 40px;
   }
   ._w-title {
-    margin-bottom: 0px;
-    height: 50vh;
+    margin-bottom: 5vh;
+    height: 70vh;
   }
   .wrapper-info {
     -webkit-box-orient: vertical;
