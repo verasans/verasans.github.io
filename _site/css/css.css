@@ -269,7 +269,7 @@ figcaption {
   margin-top: 5px;
   margin-bottom: 0px;
   font-family: 'Open Sans', sans-serif;
-  color: #000;
+  color: #173169;
   font-size: 10vh;
   line-height: 12vh;
   font-weight: 400;
@@ -284,8 +284,8 @@ figcaption {
 }
 
 .main-h1.home {
-  font-size: 25vh;
-  line-height: 22vh;
+  font-size: 20vh;
+  line-height: 17vh;
 }
 
 .paragraph {
@@ -429,7 +429,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 30vw;
+  width: 50vw;
   margin-top: 30px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1383,7 +1383,7 @@ figcaption {
 
 .project-link:hover {
   box-shadow: inset 0 -2px 0 0 #fff;
-  color: #333;
+  /*color: #333;*/
   text-transform: capitalize;
   font-weight: bold;
   background-color: #fff;
@@ -1520,6 +1520,7 @@ html.w-mod-js *[data-ix="load-up"] {
   }
   .home-subhead {
     width: 50vw;
+    font-size: 16px !important;
   }
   .project-info {
     width: 100%;
