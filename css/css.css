@@ -332,14 +332,14 @@ figcaption {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  /*background-color: rgba(0, 0, 0, .75);
-  color: #fff;*/
+  background-color: rgba(0, 0, 0, .20);
+  /*color: #fff;*/
 }
 
-/*.column._100vh:hover {
-  background-color: rgba(0, 0, 0, .75);
+.column._100vh:hover {
+  background-color: rgba(0, 0, 0, .20);
   opacity: 1;
-}*/
+}
 
 .column._100vh.black {
   padding-top: 20vh;
@@ -1623,6 +1623,7 @@ html.w-mod-js *[data-ix="load-up"] {
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
+    opacity: 20%;
   }
   .column.about {
     width: 100%;
