@@ -75,7 +75,7 @@ a {
   -webkit-transition: box-shadow 200ms ease, color 200ms ease;
   transition: box-shadow 200ms ease, color 200ms ease;
   font-family: 'Open Sans', serif;
-  color: #767676;
+  color: #595959;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
@@ -1314,7 +1314,7 @@ figcaption {
 .big-link {
   margin-bottom: 10px;
   font-family: 'Open Sans', sans-serif;
-  color: #000;
+  color: #333;
   font-size: 40px;
   line-height: 80px;
 }
