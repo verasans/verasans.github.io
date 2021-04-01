@@ -1623,7 +1623,7 @@ html.w-mod-js *[data-ix="load-up"] {
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    opacity: 20%;
+    opacity: 100%;
   }
   .column.about {
     width: 100%;
