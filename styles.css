@@ -9,13 +9,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   color: #000;
+  font-weight: 500;
 }
 
 /* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 80px 32px 24px;
 }
 
 /* Hero */
@@ -34,8 +35,9 @@ body {
 
 .intro p {
   max-width: 400px;
-  margin-bottom: 16px;
-  font-size: 12px;
+  font-size: 14px;
+  padding-bottom: 16px;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -77,9 +79,9 @@ hr {
 
 .case-text p {
   max-width: 380px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   align-self: end;
 }
 
@@ -92,12 +94,8 @@ hr {
 /* Tablet */
 @media (min-width: 768px) {
   .hero {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: end;
-  }
-
-  .case {
-    gap: 40px;
   }
 }
 
@@ -106,5 +104,349 @@ hr {
   .case {
     grid-template-columns: 280px 1fr;
     /*align-items: center; */
+  }
+  .hero {
+    grid-template-columns: 420px 1fr;
+    align-items: end;
+  }
+}
+
+/* ===== HEADER RESET ===== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  height: 46px;
+}
+
+/* Header row */
+.header-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #fff;
+}
+
+/* Desktop nav */
+.desktop-nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.desktop-nav a {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Hide checkbox */
+#nav-toggle {
+  display: none;
+}
+
+/* Menu toggle */
+.nav-toggle {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close-text {
+  display: none;
+}
+
+/* Toggle text swap */
+.menu-text {
+  display: inline;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.close-text {
+  display: none;
+}
+
+/* When menu is open */
+#nav-toggle:checked ~ .header-container .menu-text {
+  display: none;
+}
+
+#nav-toggle:checked ~ .header-container .close-text {
+  display: inline;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+/* Mobile menu (FORCED VISIBLE WHEN OPEN) */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  border-bottom: 1px solid #000;
+  z-index: 999;
+
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+
+  transition:
+    max-height 0.35s ease,
+    opacity 0.2s ease;
+}
+
+/* Mobile nav */
+.mobile-menu ul {
+  display: block;
+  list-style: none;
+}
+
+.mobile-menu li {
+  padding-bottom: 16px;
+}
+
+.mobile-menu a {
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.mobile-menu li {
+  transform: translateY(8px);
+  transition: transform 0.25s ease;
+}
+
+.mobile-menu::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Open mobile menu */
+#nav-toggle:checked ~ .mobile-menu {
+  max-height: 500px;
+  opacity: 1;
+}
+
+#nav-toggle:checked ~ .mobile-menu li {
+  transform: translateY(0);
+}
+
+/* Hide desktop nav on tablet + mobile */
+@media (max-width: 799px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* ===== ABOUT PAGE ===== */
+
+.about-section {
+  margin-bottom: 80px;
+}
+
+.about-grid {
+  display: grid;
+  gap: 32px;
+}
+
+/* Left labels */
+.about-label h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about-me h2 {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.about-label p {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.about-me p {
+  font-size: 13px;
+}
+
+.about-me a {
+  color: #000;
+}
+
+/* Right content */
+.about-content {
+  width: 100%;
+}
+
+/* TEAM */
+.team img {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  gap: 32px;
+}
+
+.services-col h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.services-col ul {
+  list-style: none;
+}
+
+.services-col li {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* experienceS */
+.experiences {
+  display: grid;
+  gap: 16px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.experience h3, .experience a{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: #000;
+}
+
+.experience p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* FOOTER CTA */
+.email-me {
+  width: 100%;
+  text-align: center;
+}
+
+.email-me a {
+  font-family:  'DM Serif Display', serif;
+  font-size: 80px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .about-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+  border-top: 1px solid #000;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Left icons */
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  font-size: 18px;
+  align-items: center;
+}
+
+/* Right links */
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 16px;
+    flex-wrap: wrap;
   }
 }
