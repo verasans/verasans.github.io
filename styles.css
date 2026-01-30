@@ -312,7 +312,7 @@ hr {
 
 /* TEAM */
 .team img {
-  width: 350px;
+  width: 100%;
   height: auto;
   display: block;
   margin-bottom: 12px;
@@ -389,10 +389,12 @@ hr {
     grid-template-columns: 1fr 2fr;
     align-items: start;
   }
-
   .services {
     grid-template-columns: repeat(2, 1fr);
   }
+  .team img {
+  width: 350px;
+}
 }
 
 /* Desktop */
