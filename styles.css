@@ -28,14 +28,14 @@ body {
 
 .hero h1 {
   font-family: 'DM Serif Display', serif;
-  font-size: 120px;
+  font-size: 80px;
   line-height: 1;
   font-weight: 500;
 }
 
 .intro p {
   max-width: 400px;
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -97,6 +97,12 @@ hr {
     grid-template-columns: 1fr 1fr;
     align-items: end;
   }
+  .hero h1 {
+  font-size: 120px;
+}
+.intro p {
+  font-size: 14px;
+}
 }
 
 /* Desktop */
