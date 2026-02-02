@@ -85,6 +85,10 @@ hr {
   align-self: end;
 }
 
+.case-text a {
+  color: #000;
+}
+
 .case-image img {
   width: 100%;
   height: auto;
