@@ -94,6 +94,14 @@ hr {
   height: auto;
   display: block;
 }
+.link {
+  text-align: end;
+}
+.link a {
+  font-size:40px;
+  line-height: 10px;
+  text-decoration: none;
+}
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -102,12 +110,11 @@ hr {
     align-items: end;
   }
   .hero h1 {
-  font-size: 120px;
-}
-
-.intro p {
-  font-size: 14px;
-}
+    font-size: 120px;
+  }
+  .intro p {
+    font-size: 14px;
+  }
 }
 
 /* Desktop */
@@ -120,6 +127,9 @@ hr {
     grid-template-columns: 420px 1fr;
     align-items: end;
   }
+  /* .link {
+  text-align: end;
+  } */
 }
 
 /* ===== HEADER RESET ===== */
