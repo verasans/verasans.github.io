@@ -305,6 +305,13 @@ hr {
   line-height: 1;
 }
 
+.about-label h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .about-me h2 {
   font-size: 80px;
   margin-bottom: 24px;
@@ -444,6 +451,10 @@ hr {
   .services {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .about-label h3 {
+    font-size: 90px;
+  }
 }
 
 /* ===== FOOTER ===== */
@@ -490,9 +501,11 @@ hr {
     gap: 16px;
     align-items: flex-start;
   }
-
   .footer-links {
     gap: 16px;
     flex-wrap: wrap;
+  }
+  .services {
+    grid-template-columns: repeat(1, 1fr)!important;
   }
 }
