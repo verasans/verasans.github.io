@@ -292,6 +292,11 @@ hr {
   gap: 32px;
 }
 
+.about-img-grid {
+  display: grid;
+  gap: 32px;
+}
+
 /* Left labels */
 .about-label h2 {
   font-family: 'DM Serif Display', serif;
@@ -331,6 +336,14 @@ hr {
   height: auto;
   display: block;
   margin-bottom: 12px;
+}
+
+/* IMG GRID */
+.img-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
 }
 
 /* SERVICES */
@@ -404,6 +417,10 @@ hr {
     grid-template-columns: 1fr 2fr;
     align-items: start;
   }
+  .about-img-grid {
+    grid-template-columns: 2fr 2fr;
+    align-items: start;
+  }
   .services {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -419,6 +436,9 @@ hr {
 @media (min-width: 1280px) {
   .about-grid {
     grid-template-columns: 1fr 2fr;
+  }
+  .about-img-grid {
+    grid-template-columns: 2fr 2fr;
   }
 
   .services {
